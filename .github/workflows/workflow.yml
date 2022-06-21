@@ -48,5 +48,5 @@ jobs:
         remote: ${{ secrets.TARGET }}
         host: ${{ secrets.HOST }}
         port: ${{ secrets.PORT }}
-        username: ${{ secrets.USER }}
+        username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.KEY }}
