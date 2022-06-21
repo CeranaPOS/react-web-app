@@ -44,7 +44,7 @@ jobs:
       uses: garygrossgarten/github-action-scp@release
       with:
         local: 'build'
-        remote: ${{ secrets.Target }}
+        remote: ${{ secrets.TARGET }}
         host: ${{ secrets.HOST }}
         port: ${{ secrets.PORT }}
         username: ${{ secrets.USER }}
