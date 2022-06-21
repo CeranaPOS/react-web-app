@@ -41,8 +41,8 @@ jobs:
 #           REMOTE_HOST: ${{ secrets.HOST }}
 #           REMOTE_USER: ${{ secrets.USERNAME }}
 #           REMOTE_PORT: ${{ secrets.PORT }}
-          REMOTE_HOST: ${{ ssh.ebg.tw }}
-          REMOTE_USER: ${{ YJack0000 }}
-          REMOTE_PORT: ${{ 55688 }}
+          REMOTE_HOST: "ssh.ebg.tw"
+          REMOTE_USER: "YJack0000"
+          REMOTE_PORT: "55688"
           TARGET: ${{ secrets.TARGET }}
 #           EXCLUDE: "/build/, /node_modules/"
