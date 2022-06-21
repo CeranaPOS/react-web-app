@@ -32,6 +32,14 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
+    # Test current directory
+      - name: Test current directory
+        run: ls -la
+        
+    # Test current directory
+    - name: Test current directory
+      run: pwd
+        
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@main
       env:
@@ -44,5 +52,5 @@ jobs:
           REMOTE_HOST: "ssh.ebg.tw"
           REMOTE_USER: "YJack0000"
           REMOTE_PORT: "55688"
-          TARGET: ${{ secrets.TARGET }}
+#           TARGET: ${{ secrets.TARGET }}
 #           EXCLUDE: "/build/, /node_modules/"
