@@ -40,5 +40,6 @@ jobs:
           SOURCE: "build/"
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USERNAME }}
+          REMOTE_PORT: ${{ secrets.PORT }}
           TARGET: ${{ secrets.TARGET }}
 #           EXCLUDE: "/build/, /node_modules/"
