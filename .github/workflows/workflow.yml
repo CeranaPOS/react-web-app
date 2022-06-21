@@ -33,8 +33,8 @@ jobs:
     - run: npm test
     
     # Test current directory
-      - name: Test current directory
-        run: ls -la
+    - name: Test current directory
+      run: ls -la
         
     # Test current directory
     - name: Test current directory
