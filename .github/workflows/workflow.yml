@@ -39,7 +39,8 @@ jobs:
     # Test current directory
     - name: Test current directory
       run: pwd
-        
+      
+    #
     - name: Deploy to Server
       uses: garygrossgarten/github-action-scp@release
       with:
