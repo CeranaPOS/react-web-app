@@ -39,11 +39,7 @@ jobs:
     # Test current directory
     - name: Test current directory
       run: pwd
-      
-    # CSS
-    - name: Test current directory
-      run: chmod 744 -R build/static/css
-      
+
 #     
 #     - name: Deploy to Server
 #       uses: garygrossgarten/github-action-scp@release
@@ -67,11 +63,11 @@ jobs:
         TARGET: ${{ secrets.TARGET }}
 #         EXCLUDE: "/dist/, /node_modules/"
 
-#     - name: executing remote ssh commands
-#       uses: appleboy/ssh-action@master
-#       with:
-#         host: ${{ secrets.HOST }}
-#         username: ${{ secrets.USERNAME }}
-#         key: ${{ secrets.KEY }}
-#         port: ${{ secrets.PORT }}
-#         script: chmod 644 -R ${{ secrets.CSS }}
+    - name: executing remote ssh commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: chmod 744 -R ${{ secrets.CSS }}
