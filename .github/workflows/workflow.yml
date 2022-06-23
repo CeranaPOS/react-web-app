@@ -42,7 +42,7 @@ jobs:
       
     # CSS
     - name: Test current directory
-      run: chmod 644 -R build/static/css
+      run: chmod 744 -R build/static/css
       
 #     
 #     - name: Deploy to Server
