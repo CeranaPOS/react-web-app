@@ -62,3 +62,12 @@ jobs:
         REMOTE_PORT: ${{ secrets.PORT }}
         TARGET: ${{ secrets.TARGET }}
 #         EXCLUDE: "/dist/, /node_modules/"
+
+    - name: executing remote ssh commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: chmod 644 -R ${{ secrets.CSS }}
