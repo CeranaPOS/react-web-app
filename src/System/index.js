@@ -169,7 +169,7 @@ function DashboardContent() {
                   ml: 2
                 }}
                 alt="Your logo."
-                src='/bee_vendor_christmas.svg'
+                src='/assets/icons/logo192.png'
             />
             <Typography
               variant="h6"
@@ -186,7 +186,7 @@ function DashboardContent() {
                 textDecoration: 'none',
               }}
             >
-                BeeVendor
+                CeranaPOS
             </Typography>
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon />
