@@ -45,7 +45,7 @@ function Navbar(props) {
                     flexGrow: 1
                 }}
                 >
-                    BeeVendor
+                    CeranaPOS
                 </Typography>
                 <nav>
                 <Link
