@@ -30,7 +30,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: CI=false npm run build
+    - run: set "REACT_APP_BASE_URL=https://nccu-dbms-team11.herokuapp.com" && CI=false npm run build
     - run: npm test
     
     # Test current directory
